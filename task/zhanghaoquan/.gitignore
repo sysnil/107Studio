@@ -5,12 +5,12 @@ Desktop.ini
 
 *.log
 
-# Runtime 缓存文件
+# Runtime
 Admin/Runtime
 Api/Runtime
 Cron/Runtime
 
-# upload 图片文件
+# upload
 Public/site_upload
 
 *.md
