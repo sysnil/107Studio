@@ -1,0 +1,293 @@
+@charset "utf-8";
+/* CSS Document */
+.content{
+	width: 1200px;
+	height: 700px;
+	background-color: white;
+	margin: 0 auto;
+	margin-top: 2px;
+}
+.content .div1{
+	width: 250px;
+	height: 160px;
+	margin-top: 30px;
+}
+.content .div1 .div11{
+	width: 220px;
+	height: 35px;
+	background: linear-gradient(to right,#B96E6E,#FFFFFF);
+	float: left;
+	padding-left: 30px;
+	padding-top: 5px;
+	color: #990000;
+	font-weight: bolder;
+	font-size: 20px;
+	border-bottom: 1px dashed #0C0B0B;
+}
+.content .div1 .div11 h{
+	cursor: text;
+}
+.content .div1 .div12{
+	width: 100%;
+	height: 120px;
+	float: left;
+	margin-top: 0;
+}
+.content .div1 .div12 ul li{
+	width: 220px;
+	height: 33px;
+	padding-left: 30px;
+	padding-top: 7px;
+	background-color: #EEEEEE;
+	cursor: pointer;
+}
+.content .div1 .div12 ul li:hover{
+	background-color: #990000;
+	color: white;
+	font-weight: bold;
+}
+.content .div2{
+	width: 250px;
+	height: 240px;
+}
+.content .div2 .div21{
+	width: 220px;
+	height: 35px;
+	background: linear-gradient(to right,#B96E6E,#FFFFFF);
+	float: left;
+	padding-left: 30px;
+	padding-top: 5px;
+	color: #990000;
+	font-weight: bolder;
+	font-size: 20px;
+	border-bottom: 1px dashed #0C0B0B;
+}
+.content .div2 .div21 h{
+	cursor: text;
+}
+.silder{
+	width: 250px;
+	height: 200px;
+	float: left;
+	margin-top: 0;
+	overflow: hidden;
+	position: relative;
+}
+.silder ul{
+	height: 200px;
+	width: 1000px;
+	position: relative;
+	cursor: pointer;
+}
+.silder ul li{
+	width: 250px;
+	float: left;
+	
+}
+.silder ul li img{
+	width: 250px;
+	height: 200px;
+}
+.content .div3{
+	width: 250px;
+	height: 240px;
+	margin-top: 5px;
+}
+.content .div3 .div31{
+	width: 220px;
+	height: 35px;
+	background: linear-gradient(to right,#B96E6E,#FFFFFF);
+	float: left;
+	padding-left: 30px;
+	padding-top: 5px;
+	color: #990000;
+	font-weight: bolder;
+	font-size: 20px;
+	border-bottom: 1px dashed #0C0B0B;
+}
+.content .div3 .div31 h{
+	cursor: text;
+}
+.content .div3 .div32{
+	width: 100%;
+	height: 200px;
+	float: left;
+	margin-top: 0;
+}
+.content .div3 .div32 ul li{
+	width: 220px;
+	height: 33px;
+	padding-left: 30px;
+	padding-top: 7px;
+	background-color: #EEEEEE;
+	cursor: pointer;
+}
+.content .div3 .div32 ul li:hover{
+	background-color: #990000;
+	color: white;
+	font-weight: bold;
+}
+.content .div4{
+	width: 930px;
+	height: 600px;
+	float: left;
+	margin-left: 280px;
+	margin-top: -645px;
+	font-weight: 100;
+}
+.content .div4 .div4_header{
+	width: 100%;
+	height: 40px;
+	background-color: #EEEEEE;
+	border-bottom: 1px dashed;
+}
+.content .div4 .div{
+	height: 40px;
+	background-color: white;
+	margin-top: -8px;
+	margin-left: 20px;
+	color: #910100;
+	font-weight: bolder;
+	font-size: 25px;
+	position: absolute;
+	border-top: 8px solid #910100;
+}
+.content .div4 .div4_header h span{
+	cursor: pointer;
+}
+.content .div4 .div4_content{
+	width: 100%;
+	height: 700px;
+	margin: 0 auto;
+	font-family: 宋体;
+	font-size: 17px;
+}
+.content .div4 .div4_content p{
+	font-weight: 100;
+	line-height: 30px;
+	cursor: pointer;
+	font-size: 20px;
+}
+.content .div4 .div4_content p span{
+	float: right;
+}
+.content .div4 .div4_content ul .li1{
+	width: 20%;
+	margin: 0 auto;
+}
+.content .div4 .div4_content ul .li{
+	width: 17%;
+	cursor: pointer;
+}
+.content .div4 .div4_content ul li h{
+	font-size: 30px;
+}
+.content .div4 .div4_content ul li span{
+	font-size: 25px;
+}
+.content .div4 .div4_content ul .li1{
+	width: 180px;
+	cursor: pointer;
+}
+.content .div4 .div4_content ul .li2 div{
+	width: 150px;
+	height: 12px;
+	border-bottom:  15px solid #B8C8D1;
+	float: left;
+	margin-left: 2px;
+	background-color: #E2E9ED;
+	padding-top: 3px;
+}
+.content .div4 .div4_content ul .li2 .div1{
+	width: 300px;
+	height: 12px;
+	float: left;
+	margin-top: 0px;
+}
+.content .div4 .div4_content ul{
+	cursor: text;
+}
+.content .div4 .div4_content ul .li2{
+	width: 100%;
+	height: 25px;
+	text-align: center;
+	font-size: 20px;
+}
+.content .div4 .div4_content ul li .content{
+	float:left;
+	width: 150px;
+	height: 60px;
+	border: none;
+	margin-top: 0;
+	font-weight: 100;
+}
+.content .div4 .div4_content ul li .content p span{
+	color: #892407;
+}
+.content .div4 .div4_content ul li .message{
+	width: 75%;
+	height: 450px;
+	margin-top: 70px;
+	background-color: #F5F5F5;
+}
+.content .div4 .div4_content ul li .message .div1{
+	width: 99.5%;
+	height: 27px;
+	background-color: #E2F2FA;
+	margin-top: 0;
+	padding-top: 3px;
+	font-weight: bold;
+	color: #2F7195;
+	border: 1px solid #C1E0FF;
+}
+.content .div4 .div4_content ul li .message .div2{
+	width: 90%;
+	height: 350px;
+	border: 1px solid #C1E0FF;
+	margin: 0 auto;
+	margin-top: 20px;
+	background-color: #FFFFFF;
+}
+.content .div4 .div4_content ul li .message .div2 .li1{
+	width: 100%;
+	height: 30px;
+	margin-top: 5px;
+}
+.content .div4 .div4_content ul li .message .div2 .li{
+	width: 100%;
+	height: 30px;
+	margin-top: 5px;
+}
+.content .div4 .div4_content ul li .message .div2 .li .in{
+	width: 250px;
+}
+.content .div4 .div4_content ul li .message .div2 .li3{
+	width: 95%;
+	height: 250px;
+	margin: 0 auto;
+	border: 1px solid #C1E0FF;
+}
+.content .div4 .div4_content ul li .message .div2 .li3 img{
+	width: 100%;
+	height: 30px;
+}
+.content .div4 .div4_content ul li .message .div2 .li3 .text{
+	width: 100%;
+	height: 218px;
+	margin-left: -1PX;
+	margin-top: -3PX;
+	border: 1px solid #C1E0FF;
+}
+.content .div4 .div4_content ul li .message .div2 .li4{
+	width: 100%;
+	height: 25px;
+}
+.content .div4 .div4_content ul li .message .div3{
+	width: 90px;
+	height: 30px;
+	padding-top: 10px;
+	font-size: 20px;
+	margin: 0 auto;
+	cursor: pointer;
+	color: blue;
+}
