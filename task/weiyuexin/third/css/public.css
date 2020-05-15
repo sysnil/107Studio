@@ -1,0 +1,164 @@
+@charset "utf-8";
+/* CSS Document */
+*{
+    margin: 0;
+    padding: 0;
+}
+li{
+    list-style: none;
+}
+.body{
+    width: 100%;
+	min-width: 1200px;
+    min-width: 1200px;
+    //user-select: none;
+}
+a{
+	text-decoration: none;
+}
+.header a{
+	color: white;
+}
+.content a{
+	color:black;
+}
+.top{
+	width: 100%;
+	min-width: 1200px;
+	height: 200px;
+	margin: 0 auto;
+	z-index: 1;
+}
+.top img{
+	width: 100%;
+	height: 200px;
+	z-index: 1;
+}
+.top .topright{
+	width: 42%;
+	height: 50px;
+	float: right;
+	margin-right: 5%;
+	margin-top: -200px;
+	z-index: 3;
+	position: relative;
+	padding-top: 5px;
+	color: white;
+}
+.top .topright #li1{
+	margin-left: 0px;
+}
+.top .topright ul li{
+	float: left;
+	margin-left: 35px;
+	margin-top: 10px;
+	cursor: pointer;
+	font-family: 宋体;
+	font-weight: 100;
+}
+.top .topright ul .search{
+	width: 200px;
+	height: 30px;
+	background-color: #AFD3EB;
+	padding-left: 10px;
+	border-bottom-left-radius: 5px;
+	border-top-left-radius: 5px;
+	margin-left: 30px;
+	margin-top: 5px;
+	outline: none;
+	border: 0;
+	color: gray;
+}
+.top .topright ul .button{
+	margin-left: 1px;
+	height: 30px;
+	width: 50px;
+	cursor: pointer;
+	border: 0;
+	background-color: #4C88AD;
+	color: #AFD3EB;
+	font-size: 18px;
+	top: 10px;
+	margin-left: 5px;
+	position: absolute;
+}
+
+
+.header{
+	width: 100%;
+	height: 50px;
+	background-color: #084466;
+	border-bottom: 1px solid #FFFFFF;
+	border-top: 1px solid #FFFFFF;
+	margin-top: 0px;
+	z-index: 10;
+	color: #FFFFFF;
+	position: relative;
+}
+.header ul{
+	width: 1200px;
+	margin: 0 auto;
+	margin-top: -2px;
+}
+.header ul li{
+	text-align: center;
+	width: 130px;
+	height: 40px;
+	margin-top: -3px;
+	padding-top: 10px;
+	float: left;
+	cursor: pointer;
+}
+.header ul li:hover{
+	background-color: #0594C9;
+	font-weight: bold;
+	letter-spacing: 2px;
+}
+.header ul li ol li{
+	background-color: #084466;
+	width: 210px;
+	height: 30px;
+	font-weight: normal;
+	letter-spacing: 0px;
+}
+.header ul li ol li:hover{
+	font-weight: bold;
+	letter-spacing: 2px;
+}
+.header ul li ol{
+	margin-top: 20px;
+}
+
+
+
+.footer{
+	width: 90%;
+	height: 100px;
+	margin: 0 auto;
+	padding: 20px;
+}
+.footer .div{
+	width: 100%;
+	height: 30px;
+	background-color: #04628D;
+}
+.footer p{
+	text-align: center;
+	cursor:text;
+}
+.footer p span{
+	cursor: pointer;
+}
+.footer p span:hover{
+	color: red;
+}
+
+
+.goToTop{
+	width: 50px;
+	height: 50px;
+	position: fixed;
+	right: 10px;
+	top: 80%;
+	cursor: pointer;
+}
