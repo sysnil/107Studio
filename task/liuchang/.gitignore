@@ -1,0 +1,27 @@
+#Windows:
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+#My configurations:
+db.ini
+deploy_key_rsa
+
+/target
+/out
+/classes
+/checkouts
+/.lein-*
+/.env
+*.iml
+.idea
+.DS_Store
+*/target
+.svn
+.project
+.settings
+.classpath
+logs
+/log
+/tmp
+hotspot.log
