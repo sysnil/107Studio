@@ -1,0 +1,121 @@
+
+        body {
+            background: url(../image/wall1.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        li {
+            list-style: none;
+        }
+
+        a {
+            text-decoration: none;
+            color: black;
+        }
+
+        .left {
+            float: left;
+            width: 10%;
+            height: auto;
+            background: url(../image/leftwall.jpg);
+            background-size: 100% 100%;
+            border-radius: 10px;
+
+
+        }
+
+        .right {
+            float: left;
+            width: 90%;
+            text-align: center;
+            padding-bottom: 10px;
+        }
+
+        #exit {
+            position: fixed;
+            top: 10px;
+
+            right: 50px;
+        }
+
+
+
+        .top {
+            text-align: center;
+            border-bottom: 1px solid black;
+
+
+
+
+        }
+
+        .left>li {
+            height: 100px;
+            font-size: 20px;
+            margin: 20px 0;
+        }
+
+        .newsstyle table {
+
+            table-layout: fixed;
+
+        }
+
+        .newsstyle td {
+
+            height: 50px;
+            word-break: keep-all;
+
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        .newsstyle {
+            display: block;
+            margin: 0 auto;
+        }
+
+        .addnews {
+            display: none;
+        }
+
+        #controll {
+            display: none;
+        }
+
+        .addnews_1 {
+            border: 1px solid #000;
+            width: 500px;
+            height: auto;
+            margin: 0 auto;
+
+        }
+
+        .addnews td {
+            border: none;
+        }
+
+        #toptd {
+            width: 2000px;
+        }
+
+        .left #con {
+            margin-top: 50px;
+        }
+
+        .newfixed {
+            position: fixed;
+            top: 20%;
+            right: 100px;
+            border: 3px solid greenyellow;
+        }
+        .choice li {
+            height:40px;
+            
+
+        }
+        .test02,.test03,.test04{
+            display:none;
+        }
