@@ -17,17 +17,16 @@
 				$content = $_POST["content"];
 				$k = $_GET["k"];
 				$addtime = time();
-
+				header('content-type:text/html;charset=gbk');
+				$mysqli->set_charset('gbk');
 			//2. 做信息过滤（省略）
 			//3. 拼装添加SQL语句，并执行添加操作
-        		if($k==1){
-        		    $sql = "insert into news values(null,'{$title}','{$keywords}','{$author}','{$addtime}','{$content}')";
+        		if($k==1||$k==-1){
+        		    $sql0 = "insert into news(title,keywords,author,content) values('{$title}','{$keywords}','{$author}','{$content}');";
         		}else{
-        		    $sql = "insert into xwsd values(null,'{$title}','{$keywords}','{$author}','{$addtime}','{$content}')";
+        		    $sql0 = "insert into xwsd(title,keywords,author,content) values('{$title}','{$keywords}','{$author}','{$content}');";
         		}
-
-				//echo $sql;
-				$mysqli->query($sql);
+        		$mysqli->query($sql0);
 			//4. 判断是否成功
 				$id = mysqli_insert_id($mysqli);//获取刚刚添加信息的自增id号值
 				if($id>0){
@@ -35,7 +34,11 @@
 				}
 				echo "<a href='javascript:window.history.back();'>返回</a>&nbsp;&nbsp;";
 				echo "<a href='../cuser.php'>浏览新闻</a>";
-				/* header("Location:../cuser.php"); */
+				if($k>0)
+				    header("Location:../cuser.php");
+				else{
+				    header("Location:../userList.php");
+				}
 				break;
 
 		case "del": //执行删除操作

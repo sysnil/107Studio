@@ -21,13 +21,6 @@ header('content-type:text/html;charset=gb2312');
         	color:black;
         }
     </style>
-	<script type="text/javascript">
-        function dodel1(){
-        	if(confirm("确定要注销吗？")){
-        		window.location='doAction.php?act=delUser&id=<?php echo $row['id']*(-1); ?>';
-            }
-		}
-    </script>
     <script type="text/javascript">
 			function dodel(id,k){
 				if(confirm("确定要删除吗？")){
@@ -58,7 +51,7 @@ header('content-type:text/html;charset=gb2312');
 			<tr>
 			<td><?php echo $i;?></td>
 			<td><?php echo $row['account'];?></td>
-			<td><a href="editUser.php?id=<?php echo $row['id'];?>&k=1">更新</a>|<a href='javascript:dodel1() '>注销</a></td>
+			<td><a href="editUser.php?id=<?php echo $row['id'];?>&k=1">更新</a>|<a href='doAction.php?act=delUser&id=<?php echo -1*$row['id'];?>'>注销</a></td>
 			</tr>
 			<?php $i++;endforeach;?>
 		</tr>

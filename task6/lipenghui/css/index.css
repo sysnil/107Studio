@@ -1,4 +1,4 @@
-/* /* content */
+ /* content */
 body{
 	background: #D6E8F4;
 }
@@ -19,11 +19,6 @@ body{
 	color: white;
 	cursor: pointer;
 
-}
-a{
-	text-overflow:ellipsis;
-	white-space:nowrap;
-	width:800px;
 }
 .bodycontent{
 	width:1220px;
@@ -382,4 +377,3 @@ a{
 	z-index: 4;
 	position: absolute;
 }
- */

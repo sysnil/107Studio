@@ -27,9 +27,13 @@
 	</div>
 
 	<!-- navigation -->
-
+	<style type="text/css">
+		.nav a{
+			width:210px;
+		}
+	</style>
 	<div class="navigation">
-		<ul class="nav">
+		<ul class="nav" id="nav">
 			<li>
 				<a href="index.html">首页</a>
 			</li>
@@ -100,7 +104,12 @@
 			</li>
 		</ul>
 	</div>
-
+	<style type="text/css">
+		#imp a{
+			width:1056px;
+			margin:0 auto;
+		}
+	</style>
 	<!-- bodycontent -->
 	<?php  require("php/common.php");
 
@@ -110,7 +119,7 @@
 	?>
 	<div class="td" id="imp">
 				<?php
-					$sql0 = "select id,title,addtime from news order by addtime desc";
+					$sql0 = "select id,title,addtime from news ORDER BY flag DESC,addtime DESC";
 					$result0=$mysqli->query($sql0);
 					if($result0 && $result0->num_rows>0){
    					 while($row0=$result0->fetch_assoc()){
@@ -154,7 +163,7 @@
 			</div>
 			<div class="titlelist">
 				<?php
-					$sql = "select id,title,addtime from news order by addtime desc";
+					$sql = "select id,title,addtime from news ORDER BY flag DESC,addtime DESC ";
 					$result=$mysqli->query($sql);
 					if($result && $result->num_rows>0){
    					 while($row=$result->fetch_assoc()){
@@ -216,7 +225,7 @@
 			<div  class="titles">
 				<ul style="font-size:15px;margin-top:15px;margin-left:-10px;" id="ttop">
 					<?php
-						$sql3 = "select id,title,addtime from xwsd order by addtime desc";
+						$sql3 = "select id,title,addtime from xwsd ORDER BY flag DESC,addtime DESC";
 						$result3=$mysqli->query($sql3);
 						if($result3 && $result3->num_rows>0){
    						while($row3=$result3->fetch_assoc()){

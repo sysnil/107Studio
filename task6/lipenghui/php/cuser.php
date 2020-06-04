@@ -1,8 +1,9 @@
 <?php
 require_once "common.php";
 session_start();
-$account = $_SESSION['account'];
-$lifeTime = 24 * 3600;
+$account = $_GET['username'];
+$_SESSION['username'] = $account;
+$account=$_SESSION['username'];
 $sql="SELECT id,account FROM user where account='{$account}'";
 $mysqli_result=$mysqli->query($sql);
 $row=$mysqli_result->fetch_assoc();
@@ -20,11 +21,6 @@ $row=$mysqli_result->fetch_assoc();
         }
     </style>
 	<script type="text/javascript">
-        function dodel1(){
-        	if(confirm("确定要注销吗？")){
-        		window.location='doAction.php?act=delUser&id=<?php echo $row['id']*(-1); ?>';
-            }
-		}
     </script>
     <script type="text/javascript">
 			function dodel(id,k){
@@ -52,7 +48,7 @@ $row=$mysqli_result->fetch_assoc();
 		</tr>
 		<tr>
 			<td><?php echo $row['account'];?></td>
-			<td><a href="editUser.php?id=<?php echo $row['id'];?>&k=-1">更新</a>|<a href='javascript:dodel1() '>注销</a></td>
+			<td><a href="editUser.php?id=<?php echo $row['id'];?>&k=-1">更新</a>|<a href='doAction.php?act=delUser&id=<?php echo $row['id'];?>'>注销</a></td>
 		</tr>
 	</table>
 	<div style="margin:0 auto;width:1000px;">

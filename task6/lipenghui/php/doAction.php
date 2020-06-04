@@ -15,7 +15,7 @@ switch($act){
         $res0=$mysqli->query($sql0);
         if($res0->num_rows>0){
             echo "<script type='text/javascript'>
-            location.href='userList.php';
+            location.href='userList.php?username={$username}';
             </script>";
         }
         $sql="select account,password from user where password='{$password}' and account='{$username}'";
@@ -24,7 +24,7 @@ switch($act){
             session_start();
             $_SESSION['account']=$username;
             echo "<script type='text/javascript'>
-            location.href='cuser.php';
+            location.href='cuser.php?username={$username}';
             </script>";
             exit;
         }
@@ -51,6 +51,8 @@ switch($act){
         $res=$mysqli->query($sql);
         if($res){
             $insert_id=$mysqli->insert_id;
+            session_start();
+            $_SESSION['account']=$username;
             echo "<script type='text/javascript'>
             alert('添加成功，网站的第{$insert_id}位用户');
             if($in==-1)
@@ -69,8 +71,12 @@ switch($act){
         break;
     case 'delUser':
         //echo '删除记录'.$id;
-        $id>0?$id1=$id:$id1=-$id;
-        $sql="DELETE FROM user WHERE id=".$id1;
+        $id=$_GET['id'];
+        if($id>0){
+            $sql="DELETE FROM user WHERE id=".$id;
+        }else{
+            $sql="DELETE FROM user WHERE id=".(-1)*$id;
+        }
         $res=$mysqli->query($sql);
         if($res){
             $mes='删除成功';
@@ -78,9 +84,9 @@ switch($act){
             $mes='删除失败';
         }
         if($id>0)
-            $url='userList.php';
-        else
             $url='login.php';
+        else
+            $url='userList.php';
         echo "<script type='text/javascript'>
         alert('{$mes}');
         location.href='{$url}';
@@ -91,6 +97,7 @@ switch($act){
         $id0=$_GET['id'];
         session_start();
         $k = $_SESSION['k'];
+        unset($_SESSION['k']);
         $sql="update user SET account='{$username}',password='{$password}' WHERE id='{$id0}'";
         $res=$mysqli->query($sql);
         if($res){
@@ -98,15 +105,12 @@ switch($act){
         }else{
             $mes='更新失败';
         }
-        if($k>0)
-            $url='userList.php';
-        else
-            $url='cuser.php';
-        session_start();
-        $_SESSION['account']=$username;
         echo "<script type='text/javascript'>
         alert('{$mes}');
-        location.href='{$url}';
+        if($k>0)
+            location.href='userList.php?username={$username}';
+        else
+            location.href='cuser.php?username={$username}';
         </script>";
         exit;
         break;
