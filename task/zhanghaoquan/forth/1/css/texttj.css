@@ -1,0 +1,125 @@
+/* Content Left Start*/
+.left{
+    width: 250px;
+    height: 625px;
+    background-color: #F0F0F0;
+    overflow: hidden;
+    float: left;
+}
+.left li{
+    width: 220px;
+    height: 40px;
+    font-size: 15px;
+    line-height: 40px;
+    letter-spacing: 1px;
+}
+.left .title{
+    color: #990000;
+    font-size: 20px;
+    font-weight: bold;
+    border-bottom: 2px dotted gray;
+    padding-left: 30px;
+}
+.leftpic{
+    width: 750px;
+    height: 180px;
+    position: relative;
+}
+.leftpic img{
+    width: 250px;
+    height: 180px;
+    float: left;
+    margin-top: 2px;
+}
+.left a{
+    width: 220px;
+    display: block;
+    padding-left: 30px;
+    color: black;
+}
+.left2 a{
+    width: 220px;
+    display: block;
+    padding-left: 30px;
+    color: black;
+}
+
+/* Content Left End */
+.content{
+    width: 1280px;
+    height: 630px;
+    margin: 30px auto;
+}
+.right{
+    width: 800px;
+    height: 548px;
+    float: left;
+    margin-left: 28px;
+}
+.righttitle{
+    width: 1000px;
+    height: 38px;
+    border-bottom: 1px darkgray dashed;
+    margin-top: 9px;
+}
+.righttitle img{
+    width: 30px;
+    height: 28px;
+    margin-left: 10px;
+    float: left;
+    margin-right: 20px;
+}
+.righttitle p{
+    float: left;
+    font-size: 18px;
+    font-weight: bold;
+    margin-right: 17px;
+    line-height: 35px;
+}
+.righttitle a{
+    color: black;
+}
+.Content{
+    width: 1200px;
+    height: 625px;
+    margin: 30px auto;
+}
+.table{
+    width: 1000px;
+    height: 550px;
+    margin-top: 25px;
+}
+.au input{
+    width: 250px;
+}
+.table input{
+    outline: none;
+}
+table{
+    border-collapse: collapse;
+    text-align: center;
+    table-layout: fixed;
+}
+table td, table th
+{
+    border: 1px solid #cad9ea;
+    color: #666;
+    height: 50px;
+    width: 200px;
+}
+select{
+    height: 25px;
+    outline: none;
+}
+.savebtn{
+    width: 600px;
+    text-align: center;
+}
+.save{
+    width: 40px;
+    margin-top: 10px;
+}
+#delete{
+    width: 40px;
+    margin-top: 20px;
+}

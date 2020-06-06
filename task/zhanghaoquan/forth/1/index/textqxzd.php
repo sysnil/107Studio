@@ -1,0 +1,12 @@
+<?php
+    $link=mysqli_connect('localhost','root','123456');
+    session_start();
+    if($link){
+        $select=mysqli_select_db($link,'text');
+        mysqli_set_charset($link,'utf8');
+        $top=$_SESSION['top'];
+        $qx_url="update main set id='0' where title='$top'";
+        $success=mysqli_query($link,$qx_url);
+        header("location:llxx.php");
+    }
+?>
