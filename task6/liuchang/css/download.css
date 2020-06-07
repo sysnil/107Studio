@@ -1,0 +1,269 @@
+/*主体处理*/
+body{
+	margin: 0;
+	padding: 0;
+	min-width: 1280px;
+}
+/*头部*/
+.header{
+	height: 200px;
+	width: 100%;
+	position: relative;
+}
+.header img{
+	height: 200px;
+	width:100%;
+}
+.header .set{
+	position: absolute;
+	right: 50px;
+	top: 10px;
+}
+.header .set span{
+	padding-right: 40px;
+	font-family: Kaiti;
+	color: #ffffff;
+	cursor: pointer;
+	height: 28px;
+	line-height: 28px;
+}
+.header .set form{
+	float: right;
+}
+.header .set .input-1{
+	height: 25px;
+	width: 180px;
+	border: thin solid #7ab5dd;
+	opacity: 0.5;
+	border-radius: 5px 0px 0px 5px;
+	padding-left: 5px;
+}
+.header .set .input-2{
+	height: 28px;
+	width: 50px;
+	border: thin solid #084466;
+	color: #ffffff;
+	background: #084466;
+	cursor: pointer;
+	font-size: 14px;
+	opacity: 0.5;
+}
+/*导航栏*/
+.nav{
+	width: 100%;
+	height: 50px;
+	background: #084466;
+	border-top: 1px solid #ffffff;
+	border-bottom: 1px solid #ffffff;
+}
+.nav ul{
+	height: 50px;
+	padding: 0;
+	margin: 0 auto;
+	line-height: 50px;
+	width: 1080px;
+}
+.nav ul .nav-show{
+	float: left;
+	list-style: none;
+	text-align: center;
+	width: 120px;
+	color: #ffffff;
+	cursor: pointer;
+	height: 50px;
+}
+.nav ul li a{
+	display: block;
+	text-decoration: none;
+	color: #ffffff;
+	
+}
+.nav ul li ol{
+	list-style: none;
+	padding: 0;
+	font-size: 14px;
+	color: #ffffff;
+	background: #084466;
+	
+	z-index: 999;
+	display: none;
+}
+.nav>ul>li>ol>li{
+	width: 180px;
+	position: relative;
+	text-align: center;
+	height: 40px;
+	line-height: 40px;
+	padding: 0px;
+	z-index: 999;
+	background: #084466;
+}
+/*主体部分*/
+.main{
+	background: #ffffff;
+	height: 700px;
+	width: 1280px;
+	margin: 0 auto;
+	position: relative;
+	padding-top: 30px;
+	padding-bottom: 20px;
+}
+/*主体左侧*/
+.main .main-left{
+	height: 700px;
+	width: 250px;
+	float: left;
+	background: #f4f4f4;
+}
+.main .main-left h2{
+	width: 220px;
+	padding-left: 30px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	margin: 0;
+	border-bottom: 2px dashed #999999;
+	color: #990000;
+	cursor: pointer;
+}
+.main .main-left p{
+	width: 220px;
+	padding-left: 30px;
+	cursor: pointer;
+	margin: 0;
+	padding-top: 16px;
+	padding-bottom: 16px;
+}
+.main .main-left .main-left-pc{
+	width: 250px;
+	height: 220px;
+	overflow: hidden;
+	position: relative;
+}
+.main .main-left .main-left-pc ul{
+	width: 750px;
+	height: 220px;
+	padding: 0;
+	margin: 0;
+	position: absolute;
+	right: 0;
+	left: 0;
+}
+.main .main-left .main-left-pc ul li{
+	width: 250px;
+	height: 220px;
+	float: left;
+}
+.main .main-left .main-left-pc ul li img{
+	width: 250px;
+	height: 220px;
+}
+.main .main-left .main-left-pc ol{
+	margin: 0;
+	padding: 0;
+	height: 0;
+	width: 0;
+}
+.main .main-left .main-left-pc ol li{
+	margin: 0;
+	padding: 0;
+	height: 0;
+	width: 0;
+}
+/*主体右侧*/
+.main .main-right{
+	height: 700px;
+	width: 1020px;
+	float: left;
+	position: absolute;
+	right: 0;
+}
+.main .main-right .main-right-top{
+	width: 1000px;
+	height: 30px;
+	border-bottom: 1px dashed #999999;
+	padding-left: 10px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+.main .main-right .main-right-top .main-right-top-1{
+	width: 30px;
+	height: 30px;
+	float: left;
+	cursor: pointer;
+}
+.main .main-right .main-right-top .main-right-top-2{
+	float: left;
+	width: 300px;
+	height: 30px;
+	font-size: 22px;
+	line-height: 30px;
+	padding-left: 10px;
+	cursor: pointer;
+	font-weight: bold;
+}
+.main .main-right .main-right-top .main-right-top-2 a{
+	text-decoration: none;
+	color: black;
+}
+.main .main-right .main-right-top img{
+	width: 30px;
+	height: 30px;
+}
+.main .main-right .main-right-bottom ul{
+	list-style-type: none;
+	list-style: url("../images/jiantou2.png");
+	width: 950px;
+	position: relative;
+}
+.main .main-right .main-right-bottom ul li{
+	height: 40px;
+	font-size: 18px;
+	line-height: 40px;
+	cursor: pointer;
+}
+.main .main-right .main-right-bottom ul li span{
+	position: absolute;
+	right: 0;
+}
+.main .main-right .main-right-bottom .yema{
+	position: absolute;
+	right: 50px;
+}
+.main .main-right .main-right-bottom .yema div{
+	float: left;
+	font-size: 10px;
+	border: 2px solid #a7ccea;
+	height: 16px;
+	width: 35px;
+	margin-left: 5px;
+	text-align: center;
+	line-height: 16px;
+	color: #e1d5cc;
+	cursor: pointer;
+}
+.main .main-right .main-right-bottom .yema .yema-1{
+	color: black;
+	border: 0;
+}
+/*页脚*/
+.footer{
+	height: 100px;
+	width: 100%;
+	background: #ffffff;
+}
+.footer .footer-top{
+	width: 90%;
+	height: 30px;
+	background: #04628d;
+	margin: 0 auto;
+}
+.footer .footer-bottom{
+	width: 80%;
+	height: 50px;
+	margin: 0 auto;
+}
+.footer .footer-bottom p{
+	text-align: center;
+	margin: 5px auto;
+	cursor: pointer;
+}
