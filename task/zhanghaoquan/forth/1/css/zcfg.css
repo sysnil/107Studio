@@ -1,0 +1,129 @@
+.content{
+    width: 1280px;
+    height: 670px;
+    margin: 30px auto;
+}
+.right{
+    width: 1000px;
+    height: 548px;
+    float: left;
+    margin-left: 28px;
+}
+.righttitle{
+    width: 1000px;
+    height: 38px;
+    border-bottom: 1px darkgray dashed;
+    margin-top: 9px;
+}
+.righttitle img{
+    width: 30px;
+    height: 28px;
+    margin-left: 10px;
+    float: left;
+    margin-right: 20px;
+}
+.righttitle p{
+    float: left;
+    font-size: 18px;
+    font-weight: bold;
+    margin-right: 17px;
+    line-height: 35px;
+}
+.rightpoint{
+    width: 5px;
+    height: 330px;
+    margin-top: 30px;
+    line-height: 30px;
+    margin-left: 3px;
+    float: left;
+}
+.righttext{
+    width: 800px;
+    height: 330px;
+    line-height: 30px;
+    margin-top: 30px;
+    margin-left: 5px;
+    float: left;
+    font-size: 17px;
+}
+.righttext a{
+    color: black;
+    text-decoration: none;
+}
+.rightdate{
+    width: 100px;
+    height: 330px;
+    float: left;
+    line-height: 30px;
+    margin-top: 30px;
+    font-size: 17px;
+    margin-left: 80px;
+}
+.rightfunc{
+    height: 20px;
+    font-size: 12px;
+    float: left;
+    margin-left: 600px;
+}
+.rightfunc p{
+    float: left;
+    margin-right: 15px;
+    font-family: 宋体;
+}
+.rightfunc input{
+    width: 30px;
+}
+.btn{
+    width: 30px;
+    text-align: center;
+    height: 15px;
+    line-height: 15px;
+    border: 1px solid #AFD5F5;
+}
+.righttitle a{
+    color: black;
+}
+.left{
+    width: 250px;
+    height: 668px;
+    background-color: #F0F0F0;
+    overflow: hidden;
+    float: left;
+}
+.left li{
+    width: 220px;
+    height: 40px;
+    font-size: 15px;
+    line-height: 40px;
+    letter-spacing: 1px;
+}
+.left .title{
+    color: #990000;
+    font-size: 20px;
+    font-weight: bold;
+    border-bottom: 2px dotted gray;
+    padding-left: 30px;
+}
+.leftpic{
+    width: 750px;
+    height: 180px;
+    position: relative;
+}
+.leftpic img{
+    width: 250px;
+    height: 180px;
+    float: left;
+    margin-top: 2px;
+}
+.left a{
+    width: 220px;
+    display: block;
+    padding-left: 30px;
+    color: black;
+}
+.left2 a{
+    width: 220px;
+    display: block;
+    padding-left: 30px;
+    color: black;
+}

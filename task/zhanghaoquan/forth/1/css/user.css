@@ -1,0 +1,58 @@
+.admin{
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    z-index: 9;
+    right: 3px;
+    top: 0;
+    background-color: white;
+    border-radius: 25px;
+    box-shadow: black 0px 0px 8px 0px;
+    text-align: center;
+    cursor: pointer;
+}
+.admin img{
+    width: 45px;
+    margin-top: 2.5px;
+}
+.adminmain{
+    width: 330px;
+    height: 70px;
+    position: fixed;
+    right: 10px;
+    top: 0;
+    z-index: 10;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: black 0px 0px 8px 0px;
+    text-align: center;
+    display: none;
+}
+.adminmain img{
+    width: 45px;
+    margin-right: 8px;
+    margin-left: 8px;
+}
+.adminmain p{
+    font-size: 12px;
+    float: left;
+    margin-left: 10px;
+}
+.adminmain div{
+    width: 80px;
+    float: left;
+    text-align: center;
+    margin-top: 2px;
+    cursor: pointer;
+}
+.adminmain a{
+    color: black;
+}
+#user_name{
+    width: 80px;
+    height: 10px; 
+    text-align: center;
+    margin-left: 0;
+    color: #084466;
+    font-weight: bold;
+}
