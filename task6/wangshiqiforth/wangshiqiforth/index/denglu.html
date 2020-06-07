@@ -1,0 +1,98 @@
+ <!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>登录页面</title>
+<script type="text/javascript">
+	//检查用户名是否填写
+	function checkName(){
+		var name = document.getElementById("add_name").value;
+		var spanNode = document.getElementById("user_name");
+		if (name != "") {
+			spanNode.innerHTML = "已填".fontcolor("green");
+			return true;
+		}else{
+			spanNode.innerHTML = "不能为空".fontcolor("red");
+			return false;
+		}
+	}
+    //检查密码是否填写
+    function checkPassword(){
+		var password = document.getElementById("add_password").value;
+		var spanNode = document.getElementById("user_password");
+		if (password != "") {
+				spanNode.innerHTML = "已填".fontcolor("green");
+				return true;
+			}else{
+				spanNode.innerHTML = "请输入密码".fontcolor("red");
+				return false;
+			}
+	}
+	//点击登录时进行检查
+	function checkForm(){
+		var name = checkName();
+		var password = checkPassword();
+		if (name && password) {
+			return true;
+		}else{
+			return false;
+		}
+	}
+</script>
+</head>
+<style type="text/css">
+	.wrapper{
+
+        text-align: center;
+		width:1000px;
+	    margin:20px auto;
+	}
+	h2{
+	background-color:#7CCD7C;
+	margin:0px;
+	text-align:center;
+    }
+    .add{
+    	margin:20px auto;
+    }
+    .add labal{
+		text-align: center;
+		background-color: 	#FFB6C1;
+		color: #fff;
+		margin:20px auto;
+	}
+	.btn { 
+    	background-color: #008CBA;;
+    	border-radius:8px;
+    	color: white;
+    	padding: 6px 93px;
+    	text-align: center;
+    	text-decoration: none;
+    	display: inline-block;
+    	font-size: 14px;
+    }
+    .error {
+    	color: #FF0000;
+    }
+</style>
+<body>
+<div class="wrapper">
+<h2>用户管理系统</h2>
+<div class="add">
+<labal>登录系统</labal>
+</div>
+    <div class="add">
+    <form method="post" action="denglu.php" onsubmit="return checkForm()">
+	<labal>用户名:</labal> <input type="text" name="add_name" id="add_name" placeholder="请输入用户名">
+	<span id="user_name" class="error">*</span><br><br>
+	<labal>密码:</labal>&nbsp&nbsp&nbsp&nbsp<input type="password" name="add_password" id="add_password"placeholder="请输入密码">
+	<span id="user_password" class="error">*</span><br><br>
+	<input class="btn" type="submit" value="登录">
+	<br>
+	</form>
+	<a href="zhuce.html">立即注册</a>
+    </div>
+</div>
+</body>
+</html>
+
