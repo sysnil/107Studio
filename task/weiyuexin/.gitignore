@@ -1,0 +1,12 @@
+# Numerous always-ignore extensions  
+*.bak  
+*.patch  
+*.diff  
+*.err 
+
+*.zip 
+*.a 
+!lib.a
+
+/TODO
+*.log

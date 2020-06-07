@@ -1,0 +1,9 @@
+<?php 
+date_default_timezone_set('Asia/Shanghai');//设置时区
+session_start();
+header('Content-type:text/html;charset=utf-8');
+define('DB_HOST','localhost');
+define('DB_USER','root');
+define('DB_PASSWORD','air0729.');
+define('DB_DATABASE','test');
+?>

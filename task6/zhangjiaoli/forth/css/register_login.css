@@ -1,0 +1,112 @@
+*{
+	padding:0;
+	margin:0;
+	list-style: none;
+	text-decoration:none;
+	background-color:rgb(245,247,255);
+}
+.left_img{
+	width:200px;
+	height:100%;
+	float:left;
+}
+#register_content{
+	position: absolute;
+    width: 470px;
+    height: 400px;
+    top: 86px;
+    padding: 40px 30px 0;
+    left: 50%;
+    margin-left: -235px;
+    border-radius: 5px;
+    text-align: left;
+    box-sizing: border-box;
+}
+#login_content{
+    position: absolute;
+    width: 470px;
+    height: 300px;
+    top: 86px;
+    padding: 40px 30px 0;
+    left: 50%;
+    margin-left: -235px;
+    border-radius: 5px;
+    text-align: left;
+    box-sizing: border-box;
+}
+.title{
+	text-align: left;
+	height: 70px;
+}
+.title h2{
+	display: inline-block;
+    font-size: 30px;
+    font-weight: 400;
+    color: rgb(40,41,35);
+    line-height: 37px;
+}
+.form{
+	height:250px;
+}
+.form1{
+    height:200px;
+}
+.input-placeholder{
+	height: 46px;
+    box-sizing: border-box;
+    border-radius: 3px;
+    font-size: 16px;
+    display: inline-block;
+    cursor: text;
+    width:100%;
+}
+.input-placeholder input{
+	height: 46px;
+	width: 100%;
+    box-sizing: border-box;
+    border: 1px solid grey;
+    border-radius: 3px;
+    padding: 11px 0 10px 16px;
+    padding-right: 0px;
+    font-size: 16px;
+}
+.j_register{
+	color: white;
+    background: rgb(59,120,221);
+    font-size: 22px;
+    letter-spacing: 2.2px;
+    line-height: 48px;
+    display: block;
+    text-align: center;
+    border-radius: 3px;
+    margin-top: 15px;
+    width:100%;
+}
+.j_login{
+    color: white;
+    background: rgb(59,120,221);
+    font-size: 22px;
+    letter-spacing: 2.2px;
+    line-height: 48px;
+    display: block;
+    text-align: center;
+    border-radius: 3px;
+    margin-top: 15px;
+}
+.j_login{
+    color: white;
+    background: rgb(59,120,221);
+    font-size: 22px;
+    letter-spacing: 2.2px;
+    line-height: 48px;
+    display: block;
+    text-align: center;
+    border-radius: 3px;
+    margin-top: 15px;
+    width:100%;
+}
+.right_img{
+	width:200px;
+	height:100%;
+	float:right;
+}

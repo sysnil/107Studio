@@ -1,0 +1,142 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>理论学习-统战部</title>
+		<link rel="stylesheet" href="../css/index.css">
+        <link rel="stylesheet" href="../css/public.css">
+        <script src="../js/jquery-3.3.1.min.js"></script>
+        <script src="../js/index.js"></script>
+	</head>
+	<body>
+		<div class="top">
+			<div class="header_search">
+				<div class="mask1"></div>
+                    <input class="search" placeholder="请输入搜索关键字" type="text" >
+                    <input class="button" type="button" value="搜索">
+            </div>
+			<a href="" class="lo">加入收藏 </a>
+			<a href="" class="lo">|</a>
+			<a href="" class="lo">设为首页</a>
+			
+		</div>
+		<div class="nav_1">
+			<div class="nav">
+			<ul>
+				<li><a href="../index.php">首页</a></li>
+				<li class="nav_list"><a href="">部门介绍</a>
+					<ol class="nav_list_child">
+                                <li><a href="">工作职责</a></li>
+                                <li><a href="">机构及人员</a></li>
+                                <li><a href="">领导小组</a></li>
+                                
+                    </ol>
+				</li>
+				<li class="nav_list"><a href="">党派团体</a>
+					<ol class="nav_list_child">
+                                <li><a href="">民革河南大学支部</a></li>
+                                <li><a href="">民盟河南大学委员会</a></li>
+                                <li><a href="">民建河南大学总支委员会</a></li>
+                                <li><a href="">民进河南大学总支委员会</a></li>
+                                <li><a href="">农工党河南大学委员会</a></li>
+                                <li><a href="">九三学社河南大学委员会</a></li>
+                                <li><a href="">河南大学台联</a></li>
+                                <li><a href="">河南大学侨联</a></li>
+                                <li><a href="">河南大学知联会</a></li>
+                                <li><a href="">河南大学留联会</a></li>
+                                
+                    </ol>
+				</li>
+				<li class="nav_list"><a href="">人大政协</a>
+					<ol class="nav_list_child">
+                                <li><a href="">人大政协</a></li>
+                    </ol>
+				</li>
+				<li class="nav_list"><a href="">建言献策</a>
+					<ol class="nav_list_child">
+                                <li><a href="">建言献策</a></li>
+                    </ol>
+				</li>
+				<li class="nav_list"><a href="">政策法规</a>
+					<ol class="nav_list_child">
+                                <li><a href="">理论经纬</a></li>
+                                <li><a href="">学习资料</a></li>
+                                <li><a href="">会议纪要</a></li>
+                                <li><a href="">工作记事</a></li>
+                    </ol>
+				</li>
+				<li class="nav_list"><a href="">民族宗教</a>
+					<ol class="nav_list_child">
+                                <li><a href="">民族工作</a></li>
+                                <li><a href="">宗教工作</a></li>
+                    </ol>
+				</li>
+				<li class="nav_list"><a href="download.html">下载专区</a>
+					<ol class="nav_list_child">
+                                <li><a href="download.html">资料下载</a></li>
+                    </ol>
+				</li>
+				<li class="nav_list"><a href="message.html">联系我们</a>
+					<ol class="nav_list_child">
+                                <li><a href="message.html">留言板</a></li>
+                                <li><a href="">微博</a></li>
+                                <li><a href="">联系方式</a></li>
+                    </ol>
+				</li>
+			</ul>
+		</div>
+		</div>
+		<div class="content"> 
+		    <div class="content_left">
+		    	<p>理论学习</p>
+		    	<li><a href="more_1.html">理论学习</a></li>
+		    	<li><a href="more_2.html">通知公告</a></li>
+		    	<li><a href="more_3.html">新闻速递</a></li>
+		    	<li><a href="more_4.html">统战忆往</a></li>
+		    	<li><a href="">人物采风</a></li>
+		    	<p>校园风光</p>
+		    	<div class="nature">
+		    		<ul >
+					     <li><img  src="../img/nature2.jpg" class="img4" /></li>
+					     <li><img  src="../img/nature3.jpg" class="img4" /></li>
+					     <li><img  src="../img/nature4.jpg" class="img4" /></li>
+					     <li><img  src="../img/nature2.jpg" class="img4"  /></li>
+				    </ul>
+		    	</div>
+		    	<p style="border-top:10px solid white ;">相关链接</p>
+		    		<li><a href="">中共中央统一战线工作部</a></li>
+		    		<li><a href="">中共河南省委统战部</a></li>
+		    		<li><a href="">开封市委统战部</a></li>
+		    		<li><a href="">河南大学</a></li>
+		    		<li><a href="">"河大统战"杂志</a></li>
+		    </div>
+		    <div class="content_right">
+		    	<div class="content_right_head">
+		    		<i><img src="../img/icon-index.png" width="30px" height="28px"/></i>
+		    		<span>&emsp;当前位置:</span>
+		    		<a href="../index.php">首页</a> > <a href="more_1.html"> 理论学习</a> >
+		    	</div>
+		    	<ul class="nav_2">
+		    		<?php
+        					$link =@new mysqli('localhost','root','','HRM');
+					        $link->set_charset('utf8');
+					        $sql="select *from Theory";
+						    $res=$link->query($sql);
+						    while($row=mysqli_fetch_assoc($res)){
+						    	    $time=$row['createtime'];
+  									$nowtime = date('Y-m-d', strtotime($time));
+						    	    echo "<li><div class=\"three\"></div><a href=\"decoration.html\">&emsp;{$row['content']}</a><span>$nowtime</span></li>";
+						    	    
+						        }
+                            mysqli_close($link);
+        					?>
+		    		
+		    	</ul>
+		    </div>
+		</div>
+		<div class="center-4" ></div>
+        	<p class="h2">Copyright © 2019 河南大学党委统战部 技术支持<a href="http://www.henu.edu.cn/">河南大学</a> <a href="">107网站工作室</a> 管理后台</p>
+        	<p class="h2">地址：中国 河南 开封.明伦街/金明大道 邮编：475001/475004 电话：0371-265666428</p>
+        	<button class="return"></button>
+	</body>
+</html>

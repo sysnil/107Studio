@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<title>注册新用户</title>
+	<script type="text/javascript">
+		//检查姓名
+		function checkName(){
+			var inputNode = document.getElementById("add_name");
+			var spanNode = document.getElementById("user_name");
+			var nameLength = document.getElementById("add_name").value.length;
+			//获取输入框的内容
+			var content = inputNode.value;
+			// 检测名字是否只包含字母跟空格
+			var reg = /^[a-zA-Z ]*$/;
+			if(content==""){
+				spanNode.innerHTML = "不能为空".fontcolor("red");
+				return false;
+			}
+			if (nameLength > 15) {
+				spanNode.innerHTML = "姓名长度过长".fontcolor("red");
+				return false;
+			}
+			if (reg.test(content)){
+				spanNode.innerHTML = "正确".fontcolor("green");
+				return true;
+			}else{
+				spanNode.innerHTML = "只允许字母跟空格".fontcolor("red");
+				return false;
+			}
+		}
+		//检查密码
+		function checkPassword(){
+			var password = document.getElementById("add_password");
+			var passwordLength = document.getElementById("add_password").value.length;
+			var content = password.value;
+			var spanNode = document.getElementById("user_password");
+			if (passwordLength > 30) {
+				spanNode.innerHTML = "密码过长".fontcolor("red");
+				return false;
+			}
+			if (content != "") {
+				spanNode.innerHTML = "已填".fontcolor("green");
+				return true;
+			}else{
+				spanNode.innerHTML = "密码不能为空".fontcolor("red");
+				return false;
+			}
+		}
+		//检查再次输入的密码
+		function checkUpassword(){
+			var password = document.getElementById("add_password").value;
+			var upassword = document.getElementById("upassword").value;
+			var spanNode = document.getElementById("uupassword");
+			if (upassword != password) {
+				spanNode.innerHTML = "密码不一致".fontcolor("red");
+				return false;
+			}
+			if (upassword != "") {
+				spanNode.innerHTML = "已填".fontcolor("green");
+				return true;
+			}else{
+				spanNode.innerHTML = "请再次输入密码".fontcolor("red");
+				return false;
+			}
+			
+		}
+		//检查性别
+		function checkSex(){
+			// var inputNode = document.getElementById("add_sex");
+			var spanNode = document.getElementById("user_sex");
+			// var content = inputNode.value;
+			//检查不能为空
+			if (!document.getElementById("man").checked && !document.getElementById("women").checked) {
+				spanNode.innerHTML = "必填".fontcolor("red");
+				return false;
+			}else{
+				spanNode.innerHTML = "已填".fontcolor("green");
+				return true;
+			}
+		}
+		//检查年龄
+		function checkAge(){
+			var age = document.getElementById("add_age").value;
+			var spanNode = document.getElementById("user_age");
+			//检查年龄是否在1-120内
+			var reg = /^(?:[1-9][0-9]?|1[01][0-9]|120)$/;
+			if (reg.test(age)) {
+				spanNode.innerHTML = "已填".fontcolor("green");
+				return true;
+			}else{
+				spanNode.innerHTML = "年龄不合法".fontcolor("red");
+				return false;
+			}
+		}
+		//检查邮箱
+		function checkEmail(){
+			var email = document.getElementById("add_email").value;
+		    var spanNode = document.getElementById("user_email");
+		    //验证邮箱的正则
+		    var reg = /^[a-z0-9]\w+@[a-z0-9]+(\.[a-z]{2,3}){1,2}$/i;
+		    if(email==""){
+		    	spanNode.innerHTML = "不能为空".fontcolor("red");
+		    	return false;
+		    }
+		    if (reg.test(email)){
+		    	spanNode.innerHTML = "正确".fontcolor("green");
+		    	return true;
+		    }else{
+		    	spanNode.innerHTML = "邮箱格式不正确".fontcolor("red");
+		    	return false;
+		    }
+		}
+		//提交form表单时进行检查
+		function checkForm(){
+			var add_name = checkName();
+			var add_sex = checkSex();
+			var add_age = checkAge();
+			var add_email = checkEmail();
+			var add_password = checkPassword();
+			var upassword = checkUpassword();
+			if (add_name && add_sex && add_age && add_email && add_password && upassword) {
+				return true;
+			}else{
+				return false;
+			}
+		}
+	</script>
+</head>
+<style type="text/css">
+	.wrapper{
+
+        text-align: center;
+		width:1000px;
+	    margin:20px auto;
+	}
+	h2{
+	background-color:#7CCD7C;
+	margin:0px;
+	text-align:center;
+    }
+    .add{
+    	margin:20px auto;
+    }
+	.add labal{
+		text-align: center;
+		background-color: 	#FFB6C1;
+		color: #fff;
+		margin:20px auto;
+	}
+	.btn { 
+    	background-color: #008CBA;;
+    	border-radius:8px;
+    	color: white;
+    	padding: 6px 93px;
+    	text-align: center;
+    	text-decoration: none;
+    	display: inline-block;
+    	font-size: 14px;
+    }
+    .error {
+    	color: #FF0000;
+    }
+</style>
+<body>
+<div class="wrapper">
+<h2>用户管理系统</h2>
+<div class="add">
+<labal>注册新用户</labal>
+</div>
+    <div>
+    <form method="post" action="zhuce.php" onsubmit="return checkForm()">
+	<labal>用户名:</labal> <input type="text" name="add_name" id=="add_name" placeholder="请设置用户名">
+	<span id="user_name" class="error">*</span><br><br>
+
+	<labal>密码:</labal>&nbsp&nbsp&nbsp&nbsp<input type="password" name="add_password" id="add_password" placeholder="请设置密码">
+	<span id="user_password" class="error">*</span><br><br>
+
+	<labal>确认密码:</labal><input type="password" name="upassword" id="upassword" placeholder="请再次输入密码">
+	<span id="uupassword" class="error">*</span><br><br>
+	
+	<labal>性别:</labal><input type="radio" name="add_sex" id="man" value="0">男
+	<input type="radio" name="add_sex" id="women" value="1">女
+	<span id="user_sex" class="error">*</span>
+	<br><br> 
+	<labal>年龄:</labal><input type="text" name="add_age" id="add_age"placeholder="请输入年龄"><span id="user_age"></span><br><br>
+	<labal>邮箱:</labal><input type="text" name="add_email" id="add_email" placeholder="请输入邮箱">
+	<span id="user_email" class="error">*</span><br><br>
+	<input class="btn" type="submit" value="注册">
+    </form>
+    </div>
+</div>
+</body>
+</html>
