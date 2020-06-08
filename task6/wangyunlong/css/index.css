@@ -1,0 +1,448 @@
+body{
+	position: relative;
+}
+/*导航栏及以上部分css样式都在public.css中*/
+.main{
+	height: 900px;
+	width: 100%;
+	background-color: #D6E8F4;
+}
+.mainContent{
+	width: 1200px;
+	height: 750px;
+	margin: 0 auto;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-top: 10px;
+	background-color: #fff;
+}
+
+
+/*导航栏下面图片和文字*/
+.headNew{
+	text-align: center;
+	position: relative;	
+}
+
+.headNew img{
+	width: 1220px;
+	height: 109px;
+}
+
+.headNew a{
+	font-size: 44px;
+	font-family: 宋体;
+	font-weight: bold;
+	color: #fff;
+	text-decoration:none;
+	text-align: center;
+	position: absolute;
+	top: 24%;
+	left:10%;
+	right: 10%;
+	z-index: 2;
+}
+
+
+/*焦点图*/
+.focusPicture{
+	width: 320px;
+	height: 255px;
+	position: relative;
+	overflow: hidden;
+	float: left;
+}
+.focusPicture ul{
+	width: 960px;
+	height: 230px;
+	position: absolute;
+	left: 0;
+	top:0;
+}
+.focusPicture li{
+	float: left;
+	list-style: none;
+}
+.focusPicture img{
+	width: 320px;
+	height: 230px;
+}
+.focusPicture a:nth-child(1){
+	position: absolute;
+	top: 235px;
+	padding-left: 40px;
+	text-decoration: none;
+	color: #000;
+	font-size: 9pt;
+	font-weight: bold;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	width: 20em;
+}
+/*焦点图中上一张下一张按钮*/
+.preNext img{
+	width: 35px;
+	height: 35px;
+}
+.preNext div:hover{
+	background:rgba(169,169,169,0.6);
+}
+.prev{
+	width: 30px;
+	height: 46px;
+	padding-top: 10px;
+	padding-right: 10px;
+	position: absolute;
+	left: -10px;
+	top: 90px;
+	z-index: 3;
+	cursor: pointer;
+}
+.next{
+	width: 30px;
+	height: 46px;
+	padding-top: 10px;
+	padding-left: 10px;
+	position: absolute;
+	right: -5px;
+	top: 90px;
+	z-index: 3;
+	cursor: pointer;
+}
+
+
+
+/*理论学习、通知公告部分部分*/
+.report{
+	width: 470px;
+	height: 255px;
+	margin-left: 10px;
+	float: left;
+}
+/*标题*/
+.links_title{
+	background-color: #F0F0F0;
+	width: 470px;
+	height: 30px;
+	position: relative;
+}
+a.title{
+	margin-left: 35%;
+	background-color: #f00;
+	text-decoration: none;
+	font-size: 18px;
+	color: #fff;
+	background-color: #084466;
+	width: 120px;
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+	display: block;
+}
+a.more{
+	display:inline-block;
+	text-decoration: none;
+	width: 65px;
+	font-size: 16px;
+	color: rgb(194,194,220);
+	position: absolute;
+	right: 0;
+	top: 2px;
+	z-index: 2;
+}
+a.more span:hover{
+	color: #FED700;
+}
+.dots{
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	background-color: #F5AA02;
+	position: absolute;
+	top: 5px;
+	right: 0;
+	z-index: 1;
+}
+/*内容*/
+.reportContent ul{
+	list-style:url(../images/squareLittle.png);
+	margin-left: 20px;
+}
+.reportContent ul li a{
+	text-decoration: none;
+	display:block;
+	height: 32px;
+	line-height: 32px;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	width: 20em;
+	overflow: hidden;
+	color: #000;
+	font-size: 14px;
+}
+.reportContent ul li span{
+	float: right;
+	font-size: 14px;
+}
+.reportContent ul li:hover,.reportContent ul li:hover a{
+	color:#DA0300;
+}
+
+
+
+/*下面是对通知公告部分做的补充*/
+.report2{
+	width: 360px;
+	margin-right: 15px;
+	float: right;
+}
+.links_title2{
+	width: 380px;
+}
+.reportContent2 ul{
+	margin-left: 30px;
+	list-style:square outside url(../images/square.png);
+}
+.reportContent2 ul li{
+	height: 38px;
+}
+.reportContent2 ul li a{
+	width: 15em;
+}
+
+
+
+
+/*下面三个连在一起的盒子*/
+.news_menu{
+	width: 378px;
+	height: 260px;
+	float: left;
+	margin-top: 30px;
+	margin-left: 20px;
+}
+.news_list{
+	position: relative;
+}
+.news_list .news_list_title{
+	text-decoration: none;
+	display: inline-block;
+	padding-left: 35px;
+	color: rgb(149,1,1);
+	font-size: 20px;
+	font-family: 微软雅黑;
+}
+.bottom_img{
+	width: 378px;
+	height: 2px;
+}
+.news_main{
+	width: 360px;
+	margin-left: 20PX;
+	list-style-image: url(../images/jiantou.png);
+}
+.news_main li{
+	padding-top: 5px;
+	color: #E33100;
+}
+.news_main li a{
+	display: inline-block;
+	height: 32px;
+	line-height: 32px;
+	color: #E33100;
+	text-decoration: none;
+	width: 17em;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+.news_main li span{
+	height: 32px;
+	line-height: 32px;
+	float: right; 
+}
+.news_main li:hover,.news_main li:hover a{
+	color: #E33100;
+}
+
+.font_color_span li,.font_color_span li a{
+	color: #000;
+}
+#special,#special a{
+	color: #E33100;
+}
+
+
+
+/*main下面图片和二维码公众号部分部分*/
+.main_foot{
+	width: 1200px;
+	height: 164px;
+	margin-top: 50px;
+	float: left;
+}
+.main_foot .code_img{
+	width: 120px;
+	height: 134px;
+	margin-left: 20px;
+	float: left;
+	background-color: #F0F0F0;
+}
+.main_foot .code_img img{
+	padding-top: 10px;
+	padding-left: 12px;
+	width: 100px;
+	height: 100px;
+} 
+.main_foot .code_img p{
+	text-align: center;
+	height: 20px;
+	font-size: 12px;
+}
+.main_foot_middle{
+	width: 890px;
+	height: 140px;
+	margin-left: 20px;
+	float: left;
+}
+.m_f_m_tittle{
+	width: 885px;
+	height: 30px;
+	background-color: #F0F0F0;
+}
+.m_f_m_tittle a{
+	margin-left: 0;
+}
+
+.img_border{
+	width: 885px;
+	height: 95px;
+	margin-top: 10px;
+	border:1px dashed #A62020;
+	border-radius: 10px;
+}
+.img_border img{
+	width: 130px;
+	height: 54px;
+	float: left;
+	margin-left: 40px;
+	margin-top: 20px;
+}
+
+/*回到顶部按钮*/
+.top_button{
+	display: block;
+	width: 45px;
+    height: 45px;
+    overflow: hidden;
+    border-radius: 50%;
+    position: fixed;
+    right: 8px;
+    bottom: 20px;
+    cursor: pointer;
+}
+.top_button img{
+	width: 45px;
+	height: 45px;
+}
+
+/*页脚部分*/
+.foot{
+	width: 100%;
+	height: 120px;
+	float: left;
+	background-color: #D6E8F4;
+}
+
+/*下面实现浮动层*/
+.float{
+	width: 320px;
+	height: 180px;
+	cursor: pointer;
+	position: fixed;
+	left: 0;
+	top: 0;
+	z-index: 99;
+}
+
+.fl_content{
+	position: relative;
+	width: 320px;
+	height: 180px;
+}
+.fl_content img{
+	width: 320px;
+	height: 180px;
+}
+.float span{
+	font-size: 24px;
+	font-weight: bold;
+	position: absolute;
+	bottom: 20px;
+	left: 6px;
+}
+.float span:nth-child(2){
+	left: auto;
+	bottom: 20px;
+	right: 4px;
+}
+.float p{
+	font-size: 12px;
+	position: absolute;
+	bottom: 0;
+	right: 4px;
+}
+
+/*下面就是点击浮动层会出现的白色盒子*/
+.flash{
+	width: 1px;
+	height: 20px;
+	position: fixed;
+	left: 0;
+	background-color: #fff;
+	display: none;
+	z-index: 9999;
+}
+
+
+/*下面是点击浮动层出现的弹出层*/
+.dialog{
+	width: 100%;
+	min-width: 1200px;
+	height: 1272px;
+	background: rgba(0, 0, 0, 0.5);
+	display: none;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 998;
+}
+.diaContent{
+	width: 500px;
+	height: 400px;
+	background-color: #FBF1E7;
+	position: fixed;
+	top: calc(50% - 200px);
+    left: calc(50% - 250px);
+	z-index: 999;
+}
+.diaContent h1{
+	display: block;
+	text-align: center;
+	background-image: url(h1bg.jpg);
+}
+#close{
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: -15px;
+    right: -15px;
+    z-index: 102;
+    cursor: pointer;
+}
+.diaContent img{
+	display: block;
+	width: 500px;
+	height: 200px;
+}

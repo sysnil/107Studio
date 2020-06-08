@@ -1,0 +1,335 @@
+/*public2.css主要是内容页和主页不同，但内容页通用的样式*/
+/*其中有不同类型的内容页所通用的h3部分title样式*/
+/*还有部分内容页独有的css样式。由于篇幅较小，所以就都放在通用样式的下面了*/
+.main{
+	width: 100%;
+	height: auto;
+}
+.mainContent{
+	width: 1280px;
+	height: 684px;
+	margin: 0 auto;
+	padding-top: 30px;
+}
+/*开始内容页左侧的竖排三个盒子的样式*/
+.content_left{
+	width: 250px;
+	height: auto;
+	float: left;
+}
+.con_list{
+	height: auto;
+	width: 250px;
+}
+.con_list_title{
+	width: 250px;
+	height: 42px;
+	border-bottom: 2px #999 dotted;
+	background-color: #D6D6D6;
+	background-image: linear-gradient(to right,#D6D6D6,#fff);
+}
+.con_list_title p{
+	height: 2em;
+	margin-left: 30px;
+	line-height: 2em;
+	font-size: 20px;
+	font-weight: bold;
+	color: #900;
+}
+.con_list_ul{
+	list-style: none;
+}
+.con_list_ul li{
+	padding-left: 30px;
+	height: 40px;
+	line-height: 40px;
+	letter-spacing: 1px;
+	background-color: #F3F3F3;
+}
+.con_list_ul li:hover{
+	background-color: #990000;
+}
+.con_list_ul li:hover a{
+	color: #fff;
+}
+.con_list_ul li a{
+	display: block;
+	height: 40px;
+	width: 214px;
+	color: #000;
+	font-size: 15px;
+	text-decoration: none;
+}
+/*内容页左侧轮播图*/
+.nature{
+	width: 250px;
+	height: 198px;
+	position: relative;
+	overflow: hidden;
+	margin-top: 3px;
+	margin-bottom: 8px;
+}
+.nature ul{
+	width: 750px;
+	height: 198px;
+	list-style: none;
+	position: absolute;
+}
+.nature ul li{
+	width: 250px;
+	height: 198px;
+	float: left;
+}
+.nature img{
+	width: 250px;
+	height: 198px;
+}
+
+
+/*下面就是内容页的不同的右侧部分了*/
+.content_right{
+	width: 980px;
+	height: auto;
+	float: left;
+	margin-left: 30px;
+	margin-top: 10px;
+}
+/*第一种类型内容页右侧title样式*/
+.c_r_head{
+	position: relative;
+	padding-bottom: 20px;
+	border-bottom: 1px dashed #c2c2c2;
+}
+.c_r_head img{
+	position: absolute;
+	top: 0;
+	left: 20px;
+	width: 30px;
+	height: 28px;
+}
+.c_r_head span{
+	margin-left: 80px;
+	margin-right: 10px;
+}
+.c_r_head a{
+	color: #000;
+	text-decoration: none;
+	margin-right: 20px;
+}
+.foot{
+	width: 100%;
+	height: 120px;
+	float: left;
+	margin-top: 30px;
+}
+
+
+
+
+/*第二种类型内容页右侧title样式*/
+.c_r_head2{
+	height: 25px;
+	background-color: #EEEEEE;
+	position: relative;
+}
+.c_r_title2{
+	position: absolute;
+	top: 0;
+	left: 40px;
+	height: 40px;
+	line-height: 40px;
+	border-top: 5px solid #9E0A12;
+	color: #910100;
+	background-color: #fff;
+}
+
+/*下面为 河大统战杂志css*/
+.magazine div{
+	margin-top: 20px;
+	margin-left: 20px;
+	float: left;
+}
+.magazine img{
+	width: 450px;
+	height: 300px;
+}
+.magazine a{
+	text-decoration: none;
+	display: block;
+}
+.magazine a p{
+	height: 30px;
+	color: #000;
+	line-height: 30px;
+	font-family: "arial black";
+	background-color: #F4F4F4;	
+	text-align: center;
+}
+/*The End*/
+
+
+/*下面实现留言板*/
+.speak a span{
+	font-family: 宋体;
+	font-weight: bold;
+	font-size: 11pt;
+	color: #000;
+}
+.speak img{
+	width: 34px;
+	height: 30px;
+}
+.information p:nth-child(1){
+	width: 383px;
+}
+.information p{
+	width: 143px;
+	height: 30px;
+	line-height: 30px;
+	float: left;
+	background-color: #0f0;
+	text-align: center;
+	margin-left: 5px;
+	background-color: #B9C9D3;
+	background-image: linear-gradient(#fff,#B9C9D3,#fff);
+}
+.lyb{
+	height: 430px;
+	width: 1000px;
+	margin-top: 50px;
+	padding-top: 10px;
+	padding-left: 20px;
+	border:1px solid #2F7195;
+}
+.lyb_first_row .yincang{
+	display: inline-block;
+}
+.lyb span{
+	font-size: 9pt;
+	font-weight: bold;
+	color: #2F7195;
+}
+.lyb input{
+	height: 23px;
+	border:1px solid #2F7195;
+}
+.lyb textarea{
+	margin-top: 20px;
+	border:1px solid #2F7195;
+}
+#anonymous{
+	vertical-align: middle;
+}
+#submit{
+	float: right;
+	height: 23px;
+	width: 50px;
+	margin-top: 7px;
+	margin-right: 8px;
+	border:1px solid #F9F9F9;
+	background-color: #BEBEBE;
+	cursor: pointer;
+}
+#lyb_title{
+	width: 300px;
+	height: 23px;
+}
+#lyb_special{
+	color: #f00;
+}
+
+
+/*下面实现联系我们页面样式*/
+p.title_center{
+	text-align: center;
+	font-size: 18pt;
+	line-height: 150%;
+	font-family: 黑体;
+	font-weight: bold;
+	margin-top: 50px;
+	margin-bottom: 10px;
+}
+.lxfs img{
+	width: 507px;
+	height: 243px;
+	margin-left: 290px;
+}
+
+
+
+/*下面实现理论学习页面样式*/
+.llxx{
+	list-style: none;
+	margin-top: 20px;
+	
+}
+.llxx li{
+	background-position: left 2px;
+	background-repeat: no-repeat;
+	background-image: url(../images/llxx.png);
+	height: 35px;
+	padding-left: 20px;
+}
+.llxx a{
+	height: 30px;
+	line-height: 30px;
+	width: 860px;
+	font-size: 17px;
+	color: #000;
+}
+.llxx span{
+	float: right;
+}
+
+
+/*下面理论学习中正文页面样式*/
+.llxxzw1 h3{
+	height: 30px;
+	line-height: 30px;
+	font-family: 宋体;
+	text-align: center;
+	
+}
+.llxxzw1 h4{
+	text-align: center;
+	font-weight: normal;
+}
+.llxxzw1 p{
+	font-family: 宋体;
+	font-size: 16px;
+	line-height: 180%;
+}
+.llxxzw1 span{
+	display: block;
+	font-family: 仿宋_GB2312;
+	font-size: 16px;
+	margin-top: 5px;
+	margin-left: 20px;
+	margin-bottom: 30px;
+}
+
+
+
+/*下面是所有和下载专区下载页右侧head部分一样的css样式，即第三种类型内容页右侧标题样式*/
+.xxzqzw{
+	display: block;
+	width: 980px;
+	height: 40px;
+	line-height: 40px;
+	background-color: #EEEEEE;
+	font-weight: normal;
+	font-size: 17px;
+}
+.xxzqzw a{
+	color: #000;
+}
+
+
+/*下面下载页面中下载内容的字体样式*/
+.xzContent p{
+	font-size: 19px;
+	text-align: center;
+	height: 30px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
