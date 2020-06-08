@@ -1,0 +1,145 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+header{
+    position: relative;
+    width: 100%;
+    height: 201px;
+}
+
+
+/* Header Start */
+.logo img{
+    width: 100%;
+    height: 200px;
+    position: absolute;
+}
+.headerfunc{
+    position: absolute;
+    right: 24%;
+    top: 17px;
+}
+.headerfunc p{
+    float: left;
+    color: #fff;
+    font-size: 16px;
+    font-family: 宋体;
+}
+.headerfunc span{
+    color: #ADBECE;
+    margin: 0px 12px;
+}
+.search{
+    position: absolute;
+    right: 7%;
+    top: 10px;
+}
+.search input{
+    width: 200px;
+    height: 30px;
+    border: none;
+    background-color: #AFD3EB;
+    padding-left: 15px;
+    border-radius: 6px;
+    color: #789CB4;
+    outline: none;
+}
+.searchip{
+    width: 200px;
+    overflow: hidden;
+    float: left;
+}
+.searchbt{
+    float: left;
+}
+.searchbt button{
+    width: 50px;
+    height: 30px;
+    margin-left: 5px;
+    border: none;
+    outline: none;
+    background-color: #4C88AE;
+    font-size: 16px;
+    color: #AFD3EB;
+    font-family: 宋体;
+    font-weight: bolder;
+    cursor: pointer;
+}
+.search input::-webkit-input-placeholder{
+    color: #789CB4;
+}
+/* Header End */
+
+/* Menu Start */
+.menu{
+    width: 100%;
+    height: 50px;
+    background-color: #084466;
+    position: relative;
+}
+.menupart{
+    width: 1200px;
+    height: 50px;
+    margin: auto;
+}
+.menupart a{
+    color: white;
+    display: block;
+}
+.menupart li{
+    float:left;
+    width:110px;
+    height:50px;
+    color: white;
+    line-height:50px;
+    text-align:center;
+    background-color: #084466;
+    margin-right:10px;
+    position:relative;
+    cursor:pointer;
+}
+.menupart ul{
+    position: absolute;
+    left: 0;
+    top: 50px;
+    display: none;
+    z-index: 1;
+}
+/* Menu End */
+
+/* Footer Start */
+.function{
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    z-index: 10;
+    right: 0;
+    bottom: 0;
+}
+.function img{
+    width: 40px;
+    height: 40px;
+    position: absolute;
+}
+.footer{
+    width: 1365px;
+    height: 100px;
+    margin: 20px auto;
+    text-align: center;
+}
+.footertitle{
+    width: 100%;
+    height: 30px;
+    background-color: #04628D;
+}
+.footerp{
+    margin-top: 15px;
+}
+/* Footer End */

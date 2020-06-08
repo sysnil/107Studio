@@ -1,0 +1,70 @@
+.content{
+    width: 1280px;
+    height: 850px;
+    margin: 30px auto;
+}
+.right{
+    width: 1000px;
+    height: 548px;
+    float: left;
+    margin-left: 28px;
+}
+.righttitle{
+    float: left;
+    width: 1000px;
+    height: 42px;
+    background-color: #F0F0F0;
+    border-bottom: 1px darkgray dashed;
+}
+.righttitle img{
+    width: 30px;
+    height: 28px;
+    margin-left: 10px;
+    float: left;
+    margin-top: 5px;
+}
+.righttitle p{
+    float: left;
+    line-height: 45px;
+    margin-left: 15px;
+}
+.righttitle a{
+    color: black;
+}
+.rightcontent{
+    width: 1000px;
+    height: 1250px;
+    float: left;
+}
+.contenttitle{
+    width: 500px;
+    height: 60px;
+    margin: auto;
+    margin-top: 30px;
+    text-align: center;
+}
+.contenttitle p{
+    font-size: 18px;
+    font-weight: bold;
+    font-family: 宋体;
+    line-height: 30px;
+}
+.contenttitle span{
+    line-height: 40px;
+}
+.contenttext p{
+    line-height: 150%;
+    font-family: 宋体;
+    font-size: 16px;
+    text-indent: 33px;
+}
+.contentnex{
+    width: 1000px;
+    height: 100px;
+    text-align: right;
+}
+.contentnex p{
+    font-family: 宋体;
+    font-size: 16px;
+    margin-top: 50px;
+}

@@ -1,0 +1,47 @@
+/* Content Start */
+
+.left{
+    width: 250px;
+    height: 705px;
+    background-color: #F0F0F0;
+    overflow: hidden;
+    float: left;
+}
+.left li{
+    width: 220px;
+    height: 40px;
+    font-size: 15px;
+    line-height: 40px;
+    letter-spacing: 1px;
+}
+.left .title{
+    color: #990000;
+    font-size: 20px;
+    font-weight: bold;
+    border-bottom: 2px dotted gray;
+    padding-left: 30px;
+}
+.leftpic{
+    width: 750px;
+    height: 180px;
+    position: relative;
+}
+.leftpic img{
+    width: 250px;
+    height: 180px;
+    float: left;
+    margin-top: 2px;
+}
+.left a{
+    width: 220px;
+    display: block;
+    padding-left: 30px;
+    color: black;
+}
+.left2 a{
+    width: 220px;
+    display: block;
+    padding-left: 30px;
+    color: black;
+}
+/* Content End */
