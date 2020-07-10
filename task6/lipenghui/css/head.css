@@ -1,0 +1,95 @@
+.head{
+	width:100%;
+	height: 200px;
+	background: url(../images/top-bj2.gif) no-repeat;
+	background-size:100% 100%;
+}
+.headcontent{
+	width:550px;
+	height: 25px;
+	line-height: 25px;
+	margin-top: 20px;
+	float: right;
+}
+.headcontent li{
+	margin-right: 40px;
+	float: left;
+	color: white;
+	font-family: 宋体;
+	cursor: pointer;
+}
+input:focus{
+	outline: none;
+}
+.search1{
+	height:30px;
+	width:200px;
+	font-color: white;
+	margin-right: 0;
+	border:1px;
+	text-indent: 1em;
+	border-radius: 5px 0 0 5px;
+}
+.search2{
+	height: 30px;
+	width:50px;
+	color: white;
+	border:none;
+	cursor: pointer;
+	background-color: #084466;
+}
+.input li:first-child{
+	margin-right:10px;
+}
+.input{
+	opacity: 50%;
+}
+.input:hover{
+	opacity: 100%;
+}
+
+/* navigation */
+
+.navigation{
+	background-color: #084466;
+	height: 50px;
+	width:100%;
+}
+.nav{
+	width:1200px;
+    height: 50px;
+    margin:0 auto;
+    font-size: 16px;
+    line-height: 50px;
+}
+.nav>li>a{
+	float: left;
+	width:120px;
+}
+.nav a{
+	color: white;
+	display: block;
+}
+.nav>li{
+	float: left;
+	text-align: center;
+	height: 50px;
+	color: white;
+	position: relative;
+}
+.nav ul{
+    position: absolute;
+    background:#084466;
+    top: 50px;
+    width: 210px;
+    font-size: 14px;
+}
+.nav ul>li{
+	height:36px;
+	line-height: 36px;
+}
+.nav a:hover{
+	background:#0594C9;
+	font-weight: 700;
+	font-size: 16px;
+}

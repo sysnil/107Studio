@@ -1,0 +1,42 @@
+.footer1{
+	width:90%;
+	height: 30px;
+	background: #04628D;
+	margin:0 auto;
+	margin-top: 15px;
+}
+.footer2{
+	width:90%;
+	height: 85px;
+	margin:0 auto;
+	margin-top: 15px;
+	text-align: center;
+	font-size: 16px;
+}
+.rightcontent{
+	font-family: 宋体;
+}
+.article{
+	font-size: 17px;
+}
+.footer{
+	position: absolute;
+	bottom: -500px;
+}
+.footer2 p a:nth-child(2):hover{
+	color:red;
+}
+.return{
+	position: fixed;
+	bottom: 100PX;
+	right: 10px;
+	width: 40px;
+	height: 40px;
+	background: #CDCFDE;
+	font-size: 15px;
+	line-height: 20px;
+	text-align: center;
+	cursor: pointer;
+	z-index: 5;
+}
+

@@ -1,0 +1,13 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+li{
+	list-style-type: none;
+}
+body{
+	min-width: 1400px;
+}
+a{
+	text-decoration:none;
+}
