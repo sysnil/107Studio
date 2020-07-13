@@ -1,3 +1,25 @@
+<?php
+header('content-type:text/html;charset=utf-8');
+$mysqli=new mysqli('localhost','root','','news');
+if($mysqli->connect_errno){
+	die('CONNECT ERROR:'.$mysqli->connect_error);
+}
+$mysqli->set_charset('utf-8');
+$sql = "select * from news2 order by istop desc,releasetime desc";
+$mysqli_result=$mysqli->query($sql);
+if($mysqli_result&&$mysqli_result->num_rows>0){
+	while($row=$mysqli_result->fetch_assoc()){
+		$rows[]=$row;
+	}
+}
+$sql1 = "select * from news1 order by istop desc,releasetime desc";
+$mysqli_result1=$mysqli->query($sql1);
+if($mysqli_result1&&$mysqli_result1->num_rows>0){
+	while($row1=$mysqli_result1->fetch_assoc()){
+		$rows1[]=$row1;
+	}
+}
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -150,13 +172,10 @@ if (!empty($username)) { ?>
 			<div class="section-2-bottom">
 				
 				<ul>
-					<li title="汪洋：人民政协要胸怀“两个大局”交出服务党和国家中心工作合格答卷" class="li-1"><a href="content-1.php">汪洋：人民政协要胸怀“两个大局”交出服务党和国家...<span>05月28日</span></a></li>
-					<li title="共商国是！中央政治局常委同志的“统战声音”"><a href="content-1.php">共商国是！中央政治局常委同志的“统战声音”<span>05月28日</span></a></li>
-					<li title="《中国科技网》会里会外话黄河：保护治理并行，让黄河成为幸福河"><a href="content-1.php">《中国科技网》会里会外话黄河：保护治理并行，让黄...<span>05月25日</span></a></li>
-					<li title="《河南省人民政府》全国人大代表卢克平：发挥学校主阵地 构建公共卫生与防疫人才培养体系"><a href="content-1.php">《河南省人民政府》全国人大代表卢克平：发挥学校主...<span>05月25日</span></a></li>
-					<li title="《河南省人民政府》全国政协委员宋纯鹏：建议释放更多政策空间 支持非教育部直属“双一流”高校发展"><a href="content-1.php">《河南省人民政府》全国政协委员宋纯鹏：建议释放更...<span>05月24日</span></a></li>
-					<li title="《光明日报》全国人大代表卢克平：建立九省区联盟守护母亲河"><a href="content-1.php">《光明日报》全国人大代表卢克平：建立九省区联盟守...<span>06月05日</span></a></li>
-					<li title="习统战知识--侨界人士身份类问答"><a href="content-1.php">统战知识--侨界人士身份类问答<span>03月07日</span></a></li>
+					<?php $i=1;foreach($rows as $row):?>
+
+	                        <li><a href="content-1.php?id=<?php echo $row['id'];?>" style="color: black;"> <?php echo $row['title']?><span><?php echo $row['releasetime']?></span></a> </li>
+                    <?php $i++; endforeach;?>
 				</ul>
 			</div>			
 		</div>
@@ -187,12 +206,11 @@ if (!empty($username)) { ?>
 			</div>
 			<div class="section-4-bottom">
 				<ul>
-					<li title="九三学社社员、生命科学学院王子成教授入选2019年江苏省徐州市“双创人才”"><a href="content-3.php">九三学社社员、生命科学学院王子成...<span>06月05日</span></a></li>
-					<li title="九三学社开封市委主委苗琛赴祥符区开展“三包三联三访”脱贫攻坚调研"><a href="content-3.php">九三学社开封市委主委苗琛赴祥符区...<span>05月29日</span></a></li>
-					<li title="九三学社河南大学委员会第二支社召开班子谈心会"><a href="content-3.php">九三学社河南大学委员会第二支社召...<span>04月02日</span></a></li>
-					<li title="九三学社河南大学委员会第四支社召开班子谈心会"><a href="content-3.php">九三学社河南大学委员会第四支社召...<span>04月02日</span></a></li>
-					<li title="民盟河南省委赴汴调研民盟传统教育基地"><a href="content-3.php">民盟河南省委赴汴调研民盟传统教育...<span>04月02日</span></a></li>
-					<li title="全省本科高校统战部长工作会议在郑州举行"><a href="content-3.php">全省本科高校统战部长工作会议在郑...<span>04月02日</span></a></li>
+
+					<?php $i=1;foreach($rows1 as $row1):?>
+
+	                        <li><a href="content-3.php?id=<?php echo $row1['id'];?>" style="color: black;"><?php echo $row1['title']?><span><?php echo $row1['releasetime']?></span></a> </li>
+                    <?php $i++; endforeach;?>
 				</ul>
 			</div>
 		</div>

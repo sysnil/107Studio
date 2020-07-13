@@ -67,7 +67,14 @@ if($mysqli_result && $mysqli_result->num_rows>0){
 			<td><?php echo $row['title'];?></td>
 			<td><?php echo $row['content'];?></td>
 			<td><?php echo $row['releasetime'];?></td>
-			<td><?php echo $row['istop'];?></td>
+			<td>
+			<?php if($row['istop']){
+               echo '<a href="top.php?istop=0&id='.$row['id'].'">取消</a>';
+           }else{
+                   echo '<a href="top.php?istop=1&id='.$row['id'].'">置顶</a>';
+               }
+               ?>
+           </td>
 			<td><a href="deletenews2.php?action=deletenews&id=<?php echo $row['id'];?>">删除</a>|<a href="doupdatenews2.php?id=<?php echo $row['id'];?>">修改</a></td>
 		</tr>
 		<?php $i++; endforeach;?>

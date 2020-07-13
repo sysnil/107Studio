@@ -1,9 +1,12 @@
 <?php
 $conn=mysqli_connect('localhost','root','','user') or die("error connecting") ; //连接数据库
-
-$sql ="select * from usertext ;"; //SQL语句
-
-$result = mysqli_query($conn,$sql); //查询
+session_start(); //声明变量
+$username = isset($_SESSION['user']) ? $_SESSION['user'] : ""; 
+$sql1 ="select * from usertext where username='$username' ;"; //SQL语句
+$sql2 ="select * from superuser where username='$username' ;";
+$result1 = mysqli_query($conn,$sql1);
+$result2 = mysqli_query($conn,$sql2);
+ //查询
 
 ?>
 <!doctype html>
@@ -55,8 +58,10 @@ $result = mysqli_query($conn,$sql); //查询
             <td>操作</td>
         </tr>
             <?php
-                while($row = mysqli_fetch_array($result))
+                while($row = mysqli_fetch_array($result1))
                 {
+                    if($username==$row['username'])
+                    {
                     echo "<tr>" ;
                     echo "<td>".$row['id']."</td>";
                     echo "<td>".$row['username']."</td>";
@@ -69,6 +74,26 @@ $result = mysqli_query($conn,$sql); //查询
                     $id=$row['id'];
                     echo "<td><a href=myupdate1.php?id=$id>修改</a></td>";
                     echo " </tr>";
+                    }
+                }
+                 while($row = mysqli_fetch_array($result2))
+                {
+                    
+                    if($username==$row['username'])
+                    {
+                    echo "<tr>" ;
+                    echo "<td>".$row['id']."</td>";
+                    echo "<td>".$row['username']."</td>";
+                    echo "<td>".$row['password']."</td>";
+                    echo "<td>".$row['sex']."</td>";
+                    echo "<td>".$row['qq']."</td>";
+                    echo "<td>".$row['email']."</td>";
+                    echo "<td>".$row['phone']."</td>";
+                    echo "<td>".$row['address']."</td>";
+                    $id=$row['id'];
+                    echo "<td><a href=myupdate1.php?id=$id>修改</a></td>";
+                    echo " </tr>";
+                    }
                 }
             ?>
 
