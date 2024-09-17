@@ -1,8 +1,23 @@
+<?php
+header('content-type:text/html;charset=utf-8');
+$mysqli=@new mysqli('localhost','root','','news');
+if($mysqli->connect_errno){
+    die('Connect Error:'.$mysqli->connect_error);
+}
+$mysqli->set_charset('utf8');
+$id=$_GET['id'];
+//支持变量的语法
+$sql="SELECT content FROM news1 WHERE id='{$id}';";
+$mysqli_result=$mysqli->query($sql);
+if($mysqli_result && $mysqli_result->num_rows>0){
+    $row=$mysqli_result->fetch_assoc();
+}
+?>
 <!DOCTYPE html>
 <html>
 <head>
 	<title>正文-统战部</title>
-	<meta charset="utf-8">
+	<meta http-equiv='Content-Type' content='text/html; charset=utf-8' />
 	<link rel="stylesheet" type="text/css" href="../css/download.css">
 	<script type="text/javascript" src="https://www.imooc.com/static/lib/jquery/1.9.1/jquery.js"></script>
 	<script type="text/javascript" src="../js/download-contact.js"></script>
@@ -117,18 +132,7 @@
 			<div class="main-right-top-2">正文</div>
 		</div>
 		<div class="main-right-bottom">
-			<pre>
-				 九三学社社员、生命科学学院王子成教授入选2019年江苏省徐州市“双创人才”
-发布时间：2020-06-05 10:29:47   作者：
-近日，徐州方面传来好消息，我校九三学社社员、生命科学学院王子成教授入选“2019年度贾汪区双创人才（创业类）”。
-
-王子成是受学校党委组织部委派，作为江苏省第十二批科技镇长团成员到江苏省徐州市贾汪区现代农业产业园区挂职科
-技副主任的。自压茬交接时起，他就深入园区开展了细致的调研工作。他发现，该园区大面积种植大棚草莓，所产草莓畅
-销北京、上海等地，农民收益相对种粮要高很多。但是，当地所种的11月份上市草莓，到次年二三月份经济产量就很低了，
-而此时距8月份草莓种植还有半年左右的空档期，此外，多年单一种植草莓，也造成了草莓病害的积累。针对这一情况，王
-子成教授大胆地提出在草莓生产的后期种植早熟大棚西瓜的设想。
-		     
-			</pre>
+			<p><?php echo $row['content'];?></p>
 		</div>
 	</div>
 </div>
