@@ -1,0 +1,51 @@
+<style type="text/css">
+		.content{
+			height: 730px;
+		}
+		.leftcontent{
+			height: 730px;
+		}
+		a{
+			color:black;
+		}
+		.rightcontent>p{
+			text-align: center;
+			font-size: 24px;
+			font-weight: 1000;
+			margin-top: 20px;
+		}
+		.table{
+			width: 950px;
+			margin-top: 20px;
+			line-height: 30px;
+			font-size: 17px;
+		}
+		.table tr>td:nth-child(2){
+			cursor: pointer;
+		}
+		.downpp{
+			width:550px;
+			float: right;
+			margin-right: -20px;
+			margin-top: 20px;
+		}
+		#down{
+			font-size:12px;
+			margin-left: 500px;
+		}
+		#down>td{
+			width:230px;
+		}
+		#down>td td:nth-child(1){
+			width: 85px;
+		}
+		#down>td td:nth-child(2){
+			width:150px;
+			height: 30px;
+		}
+		#down span{
+			border:1px solid blue;
+			margin: 0 2px;
+			cursor: pointer;
+		}
+	</style>
